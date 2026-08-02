@@ -1,0 +1,910 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Divy Mistry | Projects | Embedded Systems</title>
+    <meta name="title" content="Divy Mistry | Projects | Embedded Systems">
+    <meta name="description" content="Projects by Divy Mistry — LoRa GPS tracker, AI vision on Raspberry Pi, STM32 parking management, ESP32 door security, plant care, PCB defect detection, RF antenna design and more. Built with STM32, ESP32, Arduino, MATLAB, HFSS, KiCad, Altium, TensorFlow Lite.">
+    <meta name="keywords" content="Divy Mistry, Embedded Projects, ESP32, STM32, Arduino, LoRa, TensorFlow Lite, Raspberry Pi, PCB Design, KiCad, Altium, IoT, Firmware">
+    <meta name="author" content="Divy Mistry">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Ahmedabad">
+    <meta name="geo.position" content="22.9379;72.5574">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://divy.me/projects.html">
+    <meta property="og:site_name" content="Divy Mistry">
+    <meta property="og:title" content="Divy Mistry | Projects">
+    <meta property="og:description" content="Eleven embedded builds — LoRa tracking, edge AI, STM32 parking, door security, plant care, PCB inspection, RF design and more.">
+    <meta property="og:image" content="https://divy.me/assets/images/social-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Divy Mistry - Projects">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://divy.me/projects.html">
+    <meta property="twitter:title" content="Divy Mistry | Projects">
+    <meta property="twitter:description" content="Eleven embedded builds — LoRa tracking, edge AI, STM32 parking, door security, plant care, PCB inspection, RF design and more.">
+    <meta property="twitter:image" content="https://divy.me/assets/images/social-cover.png">
+    <meta property="twitter:image:alt" content="Divy Mistry - Projects">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://divy.me/projects.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/neo-styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/neo-styles.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-overlay">
+        <div class="loader-shapes">
+            <div class="loader-shape-svg loader-shape-1">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                    <path d="M35 40 L20 50 L35 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M65 40 L80 50 L65 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="55" y1="35" x2="45" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-2">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                    <path d="M25 35 L40 50 L25 65" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="50" y1="65" x2="75" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-3">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="20" y="20" width="60" height="60" rx="3" fill="#f1c40f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="30" y="20" width="40" height="20" fill="#a8dadc" stroke="#1d3557" stroke-width="3"/>
+                    <rect x="35" y="55" width="30" height="15" rx="2" fill="#1d3557"/>
+                    <circle cx="50" cy="35" r="3" fill="#1d3557"/>
+                </svg>
+            </div>
+        </div>
+        <div class="loader-wrapper">
+            <div class="loader-letter">D</div>
+            <div class="loader-letter">M</div>
+        </div>
+        <div class="loader-progress-bar">
+            <div class="loader-progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+        <div class="progress-checkpoints">
+            <div class="checkpoint" data-section="projects-hero">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Lab</span>
+            </div>
+            <div class="checkpoint" data-section="projects">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Projects</span>
+            </div>
+            <div class="checkpoint" data-section="contact">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Contact</span>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-brand">DM</a>
+            <div class="nav-right">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="index.html#contact" class="nav-cta">Get in Touch!</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" title="Menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <button id="theme-eye" class="theme-toggle-nav" aria-label="Toggle color theme" title="Toggle colors">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="index.html#about" class="mobile-menu-link">About</a>
+            <a href="index.html#skills" class="mobile-menu-link">Skills</a>
+            <a href="projects.html" class="mobile-menu-link active">Projects</a>
+            <a href="index.html#contact" class="mobile-menu-link mobile-menu-cta">Get in Touch!</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="projects-hero">
+        <div class="projects-hero">
+            <div class="hero-left">
+                <p class="projects-hero-greeting">My workbench is an embedded playground :)</p>
+                <h1 class="hero-name">MY<br>PROJECTS</h1>
+                <p class="projects-hero-sub">
+                    Straight from the bench — from LoRa trackers that whisper over kilometers to a CNN that
+                    eyeballs bottles on a Raspberry Pi. Every one of them started as a breadboard mess and ended as a
+                    working system, mostly with a PCB in KiCad or Altium along the way.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="paper-tear paper-tear-top">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="page-gap"></div>
+
+    <div class="paper-tear paper-tear-bottom">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="tear-tape-sticker"></div>
+
+    <div class="container">
+    <section class="section projects-section" id="projects">
+        <h2 class="section-title">THE BENCH BUILDS</h2>
+        <div class="projects-filters" id="projects-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="iot">IoT &amp; Wireless</button>
+            <button class="filter-btn" data-filter="ai">AI &amp; Vision</button>
+            <button class="filter-btn" data-filter="embedded">Embedded</button>
+            <button class="filter-btn" data-filter="analog">Analog &amp; Basics</button>
+            <button class="filter-btn" data-filter="rf">RF Design</button>
+        </div>
+        <div class="projects-grid">
+
+            <article class="project-card" data-cat="iot">
+                <div class="project-cover" style="--cover:#f9c74f">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/espressif.svg" alt="ESP32" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">01</span>
+                        <code class="project-cover-code">trackerr.lora</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Trackerr</h3>
+                <p class="project-role">A long-distance whisper box</p>
+                <p class="project-desc">
+                    Two microcontrollers and a radio link that doesn't care about Wi-Fi. GPS position, temperature and
+                    signal strength get packed into a LoRa signal that hops between an Arduino Nano 33 and an ESP32 —
+                    then lands on a tiny OLED screen.
+                </p>
+                <ul class="project-points">
+                    <li>GPS + DHT11 + RSSI beamed over LoRa SX1278</li>
+                    <li>Arduino Nano 33 (Tx) → ESP32 (Tx/Rx) relay chain</li>
+                    <li>Live readout printed on an OLED</li>
+                    <li>Breadboard circuit hardened into a real PCB in KiCad &amp; Altium</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/espressif.svg" width="18" height="18" alt="ESP32" loading="lazy"/>ESP32</span>
+                    <span class="tag"><img src="assets/icons/arduino.svg" width="18" height="18" alt="Arduino" loading="lazy"/>Arduino Nano BLE 33</span>
+                    <span class="tag">LoRa SX1278</span>
+                    <span class="tag">Neo-6M GPS</span>
+                    <span class="tag"><img src="assets/icons/kicad.svg" width="18" height="18" alt="KiCad" loading="lazy"/>KiCad</span>
+                    <span class="tag"><img src="assets/icons/altiumdesigner.svg" width="18" height="18" alt="Altium" loading="lazy"/>Altium</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="ai">
+                <div class="project-cover" style="--cover:#a8dadc">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/raspberrypi.svg" alt="Raspberry Pi" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">02</span>
+                        <code class="project-cover-code">fluid.inspect</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Fluid Level Detection</h3>
+                <p class="project-role">An AI bouncer for the bottling line</p>
+                <p class="project-desc">
+                    A CNN learns what a correctly filled bottle looks like from a custom dataset, then gets squeezed
+                    into TensorFlow Lite so it can live at the edge. A Raspberry Pi 3 runs the model in Python and
+                    decides, bottle after bottle: pass or reject.
+                </p>
+                <ul class="project-points">
+                    <li>CNN trained in TensorFlow on a custom dataset</li>
+                    <li>Shrunk to TensorFlow Lite for on-device inference</li>
+                    <li>Runs on Raspberry Pi 3 with Python</li>
+                    <li>Accept/reject call on every bottle</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/raspberrypi.svg" width="18" height="18" alt="Raspberry Pi" loading="lazy"/>Raspberry Pi 3</span>
+                    <span class="tag"><img src="assets/icons/python.svg" width="18" height="18" alt="Python" loading="lazy"/>Python</span>
+                    <span class="tag"><img src="assets/icons/tensorflow.svg" width="18" height="18" alt="TensorFlow" loading="lazy"/>TensorFlow Lite</span>
+                    <span class="tag">Colab</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="embedded">
+                <div class="project-cover" style="--cover:#2a9d8f">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/stmicroelectronics.svg" alt="STM32" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">03</span>
+                        <code class="project-cover-code">parking.watch</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Parking Management with STM32</h3>
+                <p class="project-role">The parking lot that never lies</p>
+                <p class="project-desc">
+                    IR sensors keep an eye on every slot while an STM32F030F4P6 keeps score. The state of the whole lot
+                    is always one glance away on a 16x2 LCD — and when the last space disappears, it spells out the
+                    words every driver dreads.
+                </p>
+                <ul class="project-points">
+                    <li>IR sensors track every slot</li>
+                    <li>STM32F030F4P6 brains the whole lot</li>
+                    <li>Empty/full status live on a 16x2 LCD</li>
+                    <li>"THE PARKING IS FULL" when every slot is taken</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/stmicroelectronics.svg" width="18" height="18" alt="STM32" loading="lazy"/>STM32F030F4P6</span>
+                    <span class="tag">IR Sensor</span>
+                    <span class="tag">LCD 16x2</span>
+                    <span class="tag"><img src="assets/icons/stmicroelectronics.svg" width="18" height="18" alt="STM32Cube IDE" loading="lazy"/>STM32Cube IDE</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="iot">
+                <div class="project-cover" style="--cover:#f3722c">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/espressif.svg" alt="ESP32" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">04</span>
+                        <code class="project-cover-code">door.guard</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Smart Door Security</h3>
+                <p class="project-role">A doorman with an email habit</p>
+                <p class="project-desc">
+                    The ESP32 hosts its own login page — the only key to the door. Enter the right ID and password and
+                    it swings open; fumble three times and a buzzer howls while an SMTP email pings the owner. Doors
+                    have never tattled so efficiently.
+                </p>
+                <ul class="project-points">
+                    <li>Self-hosted web page straight off the ESP32</li>
+                    <li>ID + password gate control</li>
+                    <li>Three wrong tries → buzzer + email alert via SMTP</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/espressif.svg" width="18" height="18" alt="ESP32" loading="lazy"/>ESP32</span>
+                    <span class="tag"><img src="assets/icons/html5.svg" width="18" height="18" alt="HTML" loading="lazy"/>HTML</span>
+                    <span class="tag"><img src="assets/icons/arduino.svg" width="18" height="18" alt="Arduino IDE" loading="lazy"/>Arduino IDE</span>
+                    <span class="tag">Buzzer</span>
+                    <span class="tag"><img src="assets/icons/gmail.svg" width="18" height="18" alt="SMTP" loading="lazy"/>SMTP Email</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="iot">
+                <div class="project-cover" style="--cover:#f1c40f">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/arduino.svg" alt="Arduino" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">05</span>
+                        <code class="project-cover-code">plant.tend</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Plant Care</h3>
+                <p class="project-role">A green thumb in a box</p>
+                <p class="project-desc">
+                    A NodeMCU8266 plays botanical bodyguard — constantly watching soil moisture and humidity so plants
+                    never have to beg for water. When things get thirsty it flips the relay, and the whole story syncs
+                    to the Arduino IoT Cloud.
+                </p>
+                <ul class="project-points">
+                    <li>Capacitive soil moisture + DHT11 monitoring</li>
+                    <li>Relay-driven automatic watering</li>
+                    <li>Arduino IoT Cloud dashboard for remote control</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/espressif.svg" width="18" height="18" alt="NodeMCU" loading="lazy"/>NodeMCU 8266</span>
+                    <span class="tag">DHT11</span>
+                    <span class="tag">Soil Moisture Sensor</span>
+                    <span class="tag"><img src="assets/icons/arduino.svg" width="18" height="18" alt="Arduino IoT Cloud" loading="lazy"/>Arduino IoT Cloud</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="analog">
+                <div class="project-cover" style="--cover:#457b9d">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-mark">A+</div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">06</span>
+                        <code class="project-cover-code">amp.sch</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Audio Amplifier</h3>
+                <p class="project-role">From tiny aux to tiny arena</p>
+                <p class="project-desc">
+                    Stereo in, one big voice out. The AUX signal gets collapsed to mono and pushed through an LM386 so
+                    a single speaker can finally get some respect.
+                </p>
+                <ul class="project-points">
+                    <li>Stereo → mono mixdown</li>
+                    <li>LM386 amplification stage</li>
+                    <li>Speaker-ready, noticeably louder output</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">LM386</span>
+                    <span class="tag">Capacitors</span>
+                    <span class="tag">Resistors</span>
+                    <span class="tag">Speaker</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="ai">
+                <div class="project-cover" style="--cover:#e63946">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-icon-wrap">
+                        <img class="project-cover-icon" src="assets/icons/matlab.svg" alt="MATLAB" loading="lazy"/>
+                    </div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">07</span>
+                        <code class="project-cover-code">pcb.defect</code>
+                    </div>
+                </div>
+                <h3 class="project-title">PCB Defect Detection</h3>
+                <p class="project-role">The eagle-eyed board inspector</p>
+                <p class="project-desc">
+                    A MATLAB-based image-processing rig that compares a reference board against damaged boards and
+                    flags exactly what went wrong — missing holes, spurs, broken traces, or all of the above at once,
+                    with damage highlighted right on screen.
+                </p>
+                <ul class="project-points">
+                    <li>Catches 4 defect types: missing holes, spurs, damaged traces, and combined faults</li>
+                    <li>Reference-image comparison against a folder of damaged PCBs</li>
+                    <li>Damage highlighted directly on the output image</li>
+                    <li>Custom GUI for drop-in usability</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag"><img src="assets/icons/matlab.svg" width="18" height="18" alt="MATLAB" loading="lazy"/>MATLAB</span>
+                    <span class="tag">Image Processing</span>
+                    <span class="tag">GUI</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="analog">
+                <div class="project-cover" style="--cover:#6d6875">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-mark">CD</div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">08</span>
+                        <code class="project-cover-code">visitor.count</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Visitor Counter</h3>
+                <p class="project-role">A tiny bouncer with a 7-segment brain</p>
+                <p class="project-desc">
+                    An IR sensor catches every person walking through a doorway and hands the count to a CD4026,
+                    which does what it does best — driving a 7-segment display one digit at a time, with a diode
+                    standing guard for safety.
+                </p>
+                <ul class="project-points">
+                    <li>IR sensor triggers on every entry</li>
+                    <li>CD4026 counts and drives the 7-segment display</li>
+                    <li>1N4007 diode for protection and accuracy</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">CD4026</span>
+                    <span class="tag">7-Segment Display</span>
+                    <span class="tag">IR Sensor</span>
+                    <span class="tag">1N4007</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="rf">
+                <div class="project-cover" style="--cover:#f9c74f">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-mark">RF</div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">09</span>
+                        <code class="project-cover-code">helix.2ghz</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Design of Helical Antenna</h3>
+                <p class="project-role">An 11-turn radio whisperer</p>
+                <p class="project-desc">
+                    Straight from the theory pages, an 11-turn, 2 GHz helical antenna simulated end-to-end in HFSS —
+                    complete with return loss, gain plots and the full set of graphs that prove it actually radiates.
+                </p>
+                <ul class="project-points">
+                    <li>11-turn helical antenna tuned for 2 GHz</li>
+                    <li>Full simulation in Ansoft HFSS</li>
+                    <li>Return loss and gain plots verify the design</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">Ansoft HFSS</span>
+                    <span class="tag">Antenna Design</span>
+                    <span class="tag">2 GHz</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="analog">
+                <div class="project-cover" style="--cover:#a8dadc">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-mark">H₂O</div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">10</span>
+                        <code class="project-cover-code">tank.level</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Automatic Water Level Indicator</h3>
+                <p class="project-role">An LED ladder for your tank</p>
+                <p class="project-desc">
+                    Transistor switching does the maths: as the water climbs, more LEDs light up the ladder. At the
+                    top, the buzzer sings and the motor shuts off before a single drop spills over.
+                </p>
+                <ul class="project-points">
+                    <li>LEDs light progressively as the level rises</li>
+                    <li>Buzzer + motor cut-off at the maximum level</li>
+                    <li>Built purely from transistors and resistors</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">Transistor</span>
+                    <span class="tag">Resistor</span>
+                    <span class="tag">LED</span>
+                    <span class="tag">Buzzer</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-cat="analog">
+                <div class="project-cover" style="--cover:#f1c40f">
+                    <span class="project-cover-tape"></span>
+                    <div class="project-cover-mark">LDR</div>
+                    <div class="project-cover-meta">
+                        <span class="project-cover-number">11</span>
+                        <code class="project-cover-code">street.light</code>
+                    </div>
+                </div>
+                <h3 class="project-title">Automatic Street Light Using LDR</h3>
+                <p class="project-role">Sunrise and sunset, on schedule</p>
+                <p class="project-desc">
+                    An LDR keeps an eye on the sky and flips the switch when the sun clocks out. The street light
+                    wakes up at sunset, dozes off at sunrise, and never misses a shift.
+                </p>
+                <ul class="project-points">
+                    <li>LDR senses ambient light levels</li>
+                    <li>Auto-activates at sunset</li>
+                    <li>Auto-deactivates at sunrise</li>
+                </ul>
+                <div class="tech-tags">
+                    <span class="tag">LDR</span>
+                    <span class="tag">Resistor</span>
+                    <span class="tag">Transistor</span>
+                    <span class="tag">LED</span>
+                </div>
+            </article>
+
+        </div>
+        <p class="projects-note">Want one of these on your bench? Let's talk <a href="#contact">→</a></p>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <div class="contact-container-compact">
+            <p class="contact-intro">Got a build idea? Bring it over.</p>
+            <div class="contact-grid">
+                <a href="https://linkedin.com/in/divy-mistry" target="_blank" class="contact-card">
+                    <img src="assets/icons/linkedin.svg" width="32" height="32" alt="LinkedIn" loading="lazy"/>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/LostFrequencies11" target="_blank" class="contact-card">
+                    <img src="assets/icons/github.svg" width="32" height="32" alt="GitHub" loading="lazy"/>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:divymistry11@gmail.com" class="contact-card">
+                    <img src="assets/icons/gmail.svg" width="32" height="32" alt="Email" loading="lazy"/>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-compact">
+            <div class="footer-main">
+                <div class="footer-brand-compact">
+                    <strong>DIVY MISTRY</strong>
+                    <span>Embedded Systems Student</span>
+                </div>
+                <div class="footer-nav-compact">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#experience">Experience</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="projects.html">Projects</a>
+                </div>
+                <div class="footer-social-compact">
+                    <a href="https://github.com/LostFrequencies11" target="_blank" title="GitHub">
+                        <img src="assets/icons/github.svg" width="20" height="20" alt="GitHub" loading="lazy"/>
+                    </a>
+                    <a href="https://linkedin.com/in/divy-mistry" target="_blank" title="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" width="20" height="20" alt="LinkedIn" loading="lazy"/>
+                    </a>
+                    <a href="mailto:divymistry11@gmail.com" title="Email">
+                        <img src="assets/icons/gmail.svg" width="20" height="20" alt="Email" loading="lazy"/>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom-compact">
+                <span>© 2025 Divy Mistry</span>
+                <a href="terminal.html" class="footer-terminal-link-compact">
+                    <i class="fas fa-terminal"></i> Terminal
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+
+    <script>
+        // Always start at top of page on reload
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        // Grey filter toggle (eye icon) - colourful is default
+        const themeEye = document.getElementById('theme-eye');
+        if (themeEye) {
+            themeEye.addEventListener('click', () => {
+                document.body.classList.toggle('mono');
+                const icon = themeEye.querySelector('i');
+                if (document.body.classList.contains('mono')) {
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        }
+
+        // Mobile hamburger menu
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (navToggle && mobileMenu) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                navToggle.classList.toggle('open', isOpen);
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+            mobileMenu.querySelectorAll('.mobile-menu-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Progress Bar Functionality
+        const progressBarFill = document.querySelector('.progress-bar-fill');
+        const checkpoints = document.querySelectorAll('.checkpoint');
+
+        function updateProgressBar() {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / documentHeight) * 100;
+
+            progressBarFill.style.width = progress + '%';
+
+            const sections = ['projects-hero', 'projects', 'contact'];
+            let activeIndex = 0;
+
+            sections.forEach((sectionId, index) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                        activeIndex = index;
+                    }
+                }
+            });
+
+            checkpoints.forEach((checkpoint, index) => {
+                if (index <= activeIndex) {
+                    checkpoint.classList.add('active');
+                } else {
+                    checkpoint.classList.remove('active');
+                }
+            });
+        }
+
+        checkpoints.forEach(checkpoint => {
+            checkpoint.addEventListener('click', () => {
+                const sectionId = checkpoint.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateProgressBar);
+        window.addEventListener('resize', updateProgressBar);
+        updateProgressBar();
+
+        // Smart Navbar Scroll
+        const navbar = document.querySelector('.navbar');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (!(mobileMenu && mobileMenu.classList.contains('open')) && currentScroll > lastScroll && currentScroll > 100) {
+                navbar.classList.add('navbar-hidden');
+            } else if (currentScroll < lastScroll) {
+                navbar.classList.remove('navbar-hidden');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for in-page anchors
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href');
+                if (targetId.length > 1) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+
+        // Paper Tear Gap Parallax Effect
+        const pageGap = document.querySelector('.page-gap');
+        const paperTearBottom = document.querySelector('.paper-tear-bottom');
+        const paperTearBottomBgGray = document.querySelector('.paper-tear-bottom svg path[fill="#d0d0d0"]');
+        const tearTapeSticker = document.querySelector('.tear-tape-sticker');
+        const minGapHeight = -30;
+
+        function updateTapePosition() {
+            if (paperTearBottom && tearTapeSticker) {
+                const rect = paperTearBottom.getBoundingClientRect();
+                tearTapeSticker.style.setProperty('--tape-position', `${rect.top}px`);
+            }
+        }
+
+        function updateGapParallax() {
+            if (!pageGap || !paperTearBottom) return;
+
+            const isMobile = window.innerWidth <= 768;
+
+            if (isMobile) return;
+
+            const scrollY = window.scrollY;
+            const initialGapHeight = 300;
+            const scrollStart = 100;
+            const scrollRange = 200;
+            const stickerDelay = 30;
+            const stickerStart = scrollStart + scrollRange + stickerDelay;
+            const stickerRange = 60;
+
+            updateTapePosition();
+
+            if (scrollY <= scrollStart) {
+                pageGap.style.setProperty('height', initialGapHeight + 'px', 'important');
+                paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            } else if (scrollY >= scrollStart && scrollY <= scrollStart + scrollRange) {
+                const progress = (scrollY - scrollStart) / scrollRange;
+                const currentHeight = initialGapHeight - (initialGapHeight - minGapHeight) * progress;
+
+                if (currentHeight >= 0) {
+                    pageGap.style.setProperty('height', currentHeight + 'px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                } else {
+                    pageGap.style.setProperty('height', '0px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', currentHeight + 'px', 'important');
+
+                    const negativePart = Math.abs(minGapHeight);
+                    const negativeProgress = Math.abs(currentHeight) / negativePart;
+                    const opacity = 1 - negativeProgress;
+
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = opacity;
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                }
+            } else if (scrollY > stickerStart && scrollY < stickerStart + stickerRange) {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+
+                if (tearTapeSticker) {
+                    const stickerProgress = (scrollY - stickerStart) / stickerRange;
+
+                    const translateY = -40 + (40 * stickerProgress);
+                    const translateZ = 30 - (30 * stickerProgress);
+                    const rotateX = 35 - (35 * stickerProgress);
+                    const opacityVal = Math.min(1, Math.max(0, (stickerProgress - 0.35) * 1.54));
+
+                    tearTapeSticker.style.transform = `translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg)`;
+                    tearTapeSticker.style.opacity = opacityVal;
+                }
+            } else if (scrollY >= stickerStart + stickerRange) {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(0px) translateZ(0px) rotateX(0deg)';
+                    tearTapeSticker.style.opacity = '1';
+                }
+            } else {
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            }
+        }
+
+        window.addEventListener('scroll', updateGapParallax);
+        window.addEventListener('resize', updateGapParallax);
+
+        requestAnimationFrame(() => {
+            updateGapParallax();
+        });
+
+        // Project Filters
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                projectCards.forEach(card => {
+                    const show = filter === 'all' || card.getAttribute('data-cat') === filter;
+                    card.style.display = show ? '' : 'none';
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .project-card').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Loading Screen - waits until every asset is downloaded
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-overlay');
+            const imgs = Array.from(document.querySelectorAll('img'));
+            const assets = imgs.map(img => new Promise(resolve => {
+                if (img.complete && img.naturalWidth > 0) {
+                    resolve();
+                    return;
+                }
+                const probe = new Image();
+                probe.onload = probe.onerror = resolve;
+                probe.src = img.src;
+            }));
+            Promise.all(assets).then(() => {
+                setTimeout(() => {
+                    if (loader) loader.classList.add('hidden');
+                }, 900);
+            });
+        });
+
+        // Copy email to clipboard with toast
+        function showCopyToast(email) {
+            const toast = document.getElementById('copy-toast');
+            if (!toast) return;
+            toast.querySelector('.toast-email').textContent = email;
+            toast.classList.add('active');
+            clearTimeout(toast._timer);
+            toast._timer = setTimeout(() => toast.classList.remove('active'), 2200);
+        }
+
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = link.getAttribute('href').replace('mailto:', '').split('?')[0];
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(email).then(() => showCopyToast(email));
+                } else {
+                    const ta = document.createElement('textarea');
+                    ta.value = email;
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                    showCopyToast(email);
+                }
+            });
+        });
+    </script>
+
+    <div class="toast" id="copy-toast">
+        <span class="toast-check">✓</span>
+        <span>Copied! <span class="toast-email"></span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1422 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Divy Mistry | Electronics & Communication Student | Embedded Systems</title>
+    <meta name="title" content="Divy Mistry | Electronics & Communication Student | Embedded Systems">
+    <meta name="description" content="Electronics and Communication student specializing in embedded systems. Proficient in C & Python, controller based firmware and hardware design; hands-on experience in schematic making, PCB prototyping and firmware design.">
+    <meta name="keywords" content="Divy Mistry, Embedded Systems, Firmware, Electronics, C, Python, STM32, ESP32, PCB Design, Altium, KiCad, IoT, Ahmedabad, India, Embedded Intern">
+    <meta name="author" content="Divy Mistry">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Ahmedabad">
+    <meta name="geo.position" content="22.9379;72.5574">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://divy.me">
+    <meta property="og:site_name" content="Divy Mistry">
+    <meta property="og:title" content="Divy Mistry | Embedded Systems & Firmware">
+    <meta property="og:description" content="Electronics and Communication student specializing in embedded systems. Proficient in C & Python, controller based firmware and hardware design; PCB prototyping and IoT.">
+    <meta property="og:image" content="https://divy.me/assets/images/social-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Divy Mistry - Embedded Systems">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://divy.me">
+    <meta property="twitter:title" content="Divy Mistry | Embedded Systems & Firmware">
+    <meta property="twitter:description" content="Electronics and Communication student specializing in embedded systems. Proficient in C & Python, controller based firmware and hardware design; PCB prototyping and IoT.">
+    <meta property="twitter:image" content="https://divy.me/assets/images/social-cover.png">
+    <meta property="twitter:image:alt" content="Divy Mistry - Embedded Systems">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://divy.me">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/neo-styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap" as="style">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/neo-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Space+Mono:wght@400;700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- External JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Divy Mistry",
+      "url": "https://divy.me",
+      "jobTitle": "Embedded Systems Intern",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SWASEMI PVT LTD"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ahmedabad",
+        "addressRegion": "Gujarat",
+        "addressCountry": "India"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "LJ University"
+      },
+      "knowsAbout": ["Embedded Systems", "Firmware", "C", "Python", "STM32", "ESP32", "PCB Design", "IoT", "Schematic Design", "Microcontrollers"],
+      "sameAs": [
+        "https://github.com/LostFrequencies11",
+        "https://linkedin.com/in/divy-mistry"
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader-overlay">
+        <div class="loader-shapes">
+            <div class="loader-shape-svg loader-shape-1">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                    <path d="M35 40 L20 50 L35 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M65 40 L80 50 L65 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="55" y1="35" x2="45" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-2">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                    <path d="M25 35 L40 50 L25 65" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="50" y1="65" x2="75" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="loader-shape-svg loader-shape-3">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="6" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="3" y="3" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="20" y="20" width="60" height="60" rx="3" fill="#f1c40f" stroke="#1d3557" stroke-width="4"/>
+                    <rect x="30" y="20" width="40" height="20" fill="#a8dadc" stroke="#1d3557" stroke-width="3"/>
+                    <rect x="35" y="55" width="30" height="15" rx="2" fill="#1d3557"/>
+                    <circle cx="50" cy="35" r="3" fill="#1d3557"/>
+                </svg>
+            </div>
+        </div>
+        <div class="loader-wrapper">
+            <div class="loader-letter">D</div>
+            <div class="loader-letter">M</div>
+        </div>
+        <div class="loader-progress-bar">
+            <div class="loader-progress-fill"></div>
+        </div>
+    </div>
+
+    <div class="page-wrapper">
+    <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+        <div class="progress-checkpoints">
+            <div class="checkpoint" data-section="hero">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Home</span>
+            </div>
+            <div class="checkpoint" data-section="about">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">About</span>
+            </div>
+            <div class="checkpoint" data-section="experience">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Journey</span>
+            </div>
+            <div class="checkpoint" data-section="skills">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Skills</span>
+            </div>
+            <div class="checkpoint" data-section="contact">
+                <div class="checkpoint-dot"></div>
+                <span class="checkpoint-label">Contact</span>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-brand">DM</a>
+            <div class="nav-right">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-cta">Get in Touch!</a>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false" title="Menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <button id="theme-eye" class="theme-toggle-nav" aria-label="Toggle color theme" title="Toggle colors">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="#skills" class="mobile-menu-link">Skills</a>
+            <a href="projects.html" class="mobile-menu-link">Projects</a>
+            <a href="#contact" class="mobile-menu-link mobile-menu-cta">Get in Touch!</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <p class="hero-greeting" id="hero-greeting">Hi there! :)</p>
+                <h1 class="hero-name">I'm Divy Mistry.</h1>
+                <p class="hero-description">
+                    Based in Ahmedabad, India, I'm an Electronics and Communication student specializing in embedded systems. I work with C & Python, controller-based firmware and hardware design — schematic making, PCB prototyping, and firmware design across various softwares and IDEs.
+                </p>
+                <div class="hero-social">
+                    <a href="https://github.com/LostFrequencies11" target="_blank" class="social-btn" title="GitHub">
+                        <img src="assets/icons/github.svg" width="24" height="24" alt="GitHub" loading="lazy"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/divy-mistry" target="_blank" class="social-btn" title="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" width="24" height="24" alt="LinkedIn" loading="lazy"/>
+                    </a>
+                    <a href="mailto:divymistry11@gmail.com" class="social-btn" title="Email">
+                        <img src="assets/icons/gmail.svg" width="24" height="24" alt="Email" loading="lazy"/>
+                    </a>
+                </div>
+                <div class="hero-cta-container">
+                    <a href="#contact" class="btn-cta">Get in Touch!</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="tape-sticker"></div>
+                    <div class="deco-code">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="4"/>
+                            <path d="M35 40 L20 50 L35 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M65 40 L80 50 L65 60" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="55" y1="35" x2="45" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="deco-terminal">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#f9c74f" stroke="#1d3557" stroke-width="4"/>
+                            <path d="M25 35 L40 50 L25 65" stroke="#1d3557" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="50" y1="65" x2="75" y2="65" stroke="#1d3557" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="deco-floppy">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="6" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                            <rect x="3" y="3" width="88" height="88" rx="8" fill="#2a9d8f" stroke="#1d3557" stroke-width="4"/>
+                            <rect x="20" y="20" width="60" height="60" rx="3" fill="#f1c40f" stroke="#1d3557" stroke-width="4"/>
+                            <rect x="30" y="20" width="40" height="20" fill="#a8dadc" stroke="#1d3557" stroke-width="3"/>
+                            <rect x="35" y="55" width="30" height="15" rx="2" fill="#1d3557"/>
+                            <circle cx="50" cy="35" r="3" fill="#1d3557"/>
+                        </svg>
+                    </div>
+                    <div class="hero-terminal-card">
+                        <div class="hero-terminal-header">
+                            <div class="hero-terminal-dots">
+                                <span class="ht-dot ht-close"></span>
+                                <span class="ht-dot ht-min"></span>
+                                <span class="ht-dot ht-max"></span>
+                            </div>
+                            <span class="hero-terminal-title">divy@mistry: ~</span>
+                        </div>
+                        <div class="hero-terminal-body">
+                            <p class="ht-line"><span class="ht-prompt">➜</span> <span class="ht-cmd">whoami</span></p>
+                            <p class="ht-out">Divy Mistry — Embedded Systems Student</p>
+                            <p class="ht-line"><span class="ht-prompt">➜</span> <span class="ht-cmd">location</span></p>
+                            <p class="ht-out">Ahmedabad, India</p>
+                            <p class="ht-line"><span class="ht-prompt">➜</span> <span class="ht-cmd">stack</span></p>
+                            <p class="ht-out">C · Python · STM32 · ESP32</p>
+                            <p class="ht-line"><span class="ht-prompt">➜</span> <span class="ht-cmd">status</span></p>
+                            <p class="ht-out ht-success">✓ open to opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tech-badges">
+            <span class="tech-badge">
+                <img src="assets/icons/c.svg" width="20" height="20" alt="C" loading="lazy"/>
+                C
+            </span>
+            <span class="tech-badge">
+                <img src="assets/icons/python.svg" width="20" height="20" alt="Python" loading="lazy"/>
+                Python
+            </span>
+            <span class="tech-badge">
+                <img src="assets/icons/stmicroelectronics.svg" width="20" height="20" alt="STM32" loading="lazy"/>
+                STM32
+            </span>
+            <span class="tech-badge">
+                <img src="assets/icons/espressif.svg" width="20" height="20" alt="ESP32" loading="lazy"/>
+                ESP32
+            </span>
+            <span class="tech-badge">
+                <img src="assets/icons/altiumdesigner.svg" width="20" height="20" alt="Altium" loading="lazy"/>
+                Altium
+            </span>
+            <span class="tech-badge">
+                <img src="assets/icons/kicad.svg" width="20" height="20" alt="KiCad" loading="lazy"/>
+                KiCad
+            </span>
+            <span class="tech-badge">
+                IoT
+            </span>
+            <span class="tech-badge">
+                Modbus / RS485
+            </span>
+        </div>
+    </section>
+
+    <div class="paper-tear paper-tear-top">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="page-gap"></div>
+
+    <div class="paper-tear paper-tear-bottom">
+        <svg width="100%" height="30" viewBox="0 0 1440 30" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,0 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,0 Z"
+            fill="#d0d0d0" stroke="none"/>
+            <path d="M0,30 L0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15 L1440,30 Z"
+            fill="#ffffff" stroke="none"/>
+            <path d="M0,15 Q10,5 20,15 T40,15 Q50,5 60,15 T80,15 Q90,20 100,15 T120,15 Q130,10 140,15 T160,15 Q170,5 180,15 T200,15 Q210,20 220,15 T240,15 Q250,8 260,15 T280,15 Q290,18 300,15 T320,15 Q330,5 340,15 T360,15 Q370,12 380,15 T400,15 Q410,20 420,15 T440,15 Q450,6 460,15 T480,15 Q490,16 500,15 T520,15 Q530,8 540,15 T560,15 Q570,20 580,15 T600,15 Q610,10 620,15 T640,15 Q650,5 660,15 T680,15 Q690,18 700,15 T720,15 Q730,12 740,15 T760,15 Q770,7 780,15 T800,15 Q810,20 820,15 T840,15 Q850,9 860,15 T880,15 Q890,14 900,15 T920,15 Q930,6 940,15 T960,15 Q970,19 980,15 T1000,15 Q1010,11 1020,15 T1040,15 Q1050,5 1060,15 T1080,15 Q1090,17 1100,15 T1120,15 Q1130,8 1140,15 T1160,15 Q1170,13 1180,15 T1200,15 Q1210,20 1220,15 T1240,15 Q1250,7 1260,15 T1280,15 Q1290,16 1300,15 T1320,15 Q1330,10 1340,15 T1360,15 Q1370,5 1380,15 T1400,15 Q1410,18 1420,15 T1440,15"
+            fill="none" stroke="var(--border)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+    <div class="tear-tape-sticker"></div>
+
+    <div class="container">
+
+        <section class="section" id="about">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="card">
+                <p class="text">
+                    Last year <span class="highlight highlight-yellow">Electronics and Communication</span> student, specializing in
+                    <span class="highlight highlight-cyan">embedded systems</span>. Proficient in
+                    <span class="highlight highlight-green">C & Python</span>, controller based
+                    <span class="highlight highlight-yellow">Firmware and Hardware design</span>; hands-on experience in
+                    <span class="highlight highlight-pink">schematic making, PCB prototyping, and firmware designing</span> across various softwares and IDEs.
+                </p>
+                <p class="text">
+                    I have independently <span class="highlight highlight-cyan">designed, developed, tested, and debugged embedded C projects</span>.
+                    I'm a <span class="highlight highlight-yellow">fast learner</span> with a strong ability to grasp any environment and
+                    <span class="highlight highlight-pink">collaborate effectively</span> within
+                    <span class="highlight highlight-green">cross-functional teams</span> on complex systems.
+                </p>
+            </div>
+        </section>
+
+        <section class="section journey-section" id="experience">
+            <h2 class="section-title-center">My Journey</h2>
+            <div class="journey-container">
+                <div class="journey-timeline">
+                    <h3 class="timeline-header">Journey Timeline</h3>
+            <div class="timeline-list">
+                <div class="timeline-item-flat" id="exp-1" data-country="SWASEMI">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-flat">
+                        <h4 class="timeline-title">Embedded Systems Intern @ SWASEMI PVT LTD</h4>
+                        <p class="timeline-date">Nov 2025 - Present</p>
+                        <p class="timeline-description">
+                            Firmware on STM32, Renesas, ESP32, WCH32. PCB design in Altium, KiCad, EAGLE. Protocols: RS485, Modbus, MQTT, BLE, cellular.
+                        </p>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Pirana-Piplaj Road, Ahmedabad, India</p>
+                    </div>
+                </div>
+                <div class="timeline-item-flat" id="exp-2" data-country="LJ University">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-flat">
+                        <h4 class="timeline-title">Bachelor of Electronics & Communication @ LJ University</h4>
+                        <p class="timeline-date">2023 - 2026</p>
+                        <p class="timeline-description">
+                            Final-year ECE specializing in embedded systems. C & Python, firmware and hardware design.
+                        </p>
+                        <p class="timeline-location"><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</p>
+                    </div>
+                </div>
+                <div class="timeline-item-flat" id="exp-3" data-country="Shree Durga Vidhyalaya">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content-flat">
+                        <h4 class="timeline-title">Higher Secondary @ Shree Durga Vidhyalaya</h4>
+                        <p class="timeline-date">2022</p>
+                        <p class="timeline-description">
+                            Completed Higher Secondary education.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                </div>
+                <div class="journey-timeline-back">
+                    <svg class="treasure-map-svg" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Aged paper background -->
+                        <rect width="400" height="600" fill="#e8e8e8"/>
+
+                        <!-- Compass Rose -->
+                        <g transform="translate(320, 80)">
+                            <circle cx="0" cy="0" r="35" fill="none" stroke="#5a5a5a" stroke-width="2"/>
+                            <circle cx="0" cy="0" r="30" fill="none" stroke="#5a5a5a" stroke-width="1"/>
+                            <!-- N -->
+                            <polygon points="0,-30 5,-10 -5,-10" fill="#8a8a8a"/>
+                            <!-- S -->
+                            <polygon points="0,30 5,10 -5,10" fill="#5a5a5a"/>
+                            <!-- E -->
+                            <polygon points="30,0 10,5 10,-5" fill="#5a5a5a"/>
+                            <!-- W -->
+                            <polygon points="-30,0 -10,5 -10,-5" fill="#5a5a5a"/>
+                            <text x="0" y="-40" text-anchor="middle" font-size="16" font-weight="bold" fill="#5a5a5a">N</text>
+                        </g>
+
+                        <!-- Dotted path route -->
+                        <path d="M 80,150 Q 120,200 100,250 T 140,350 Q 160,400 200,420"
+                              stroke="#8a8a8a" stroke-width="3" fill="none"
+                              stroke-dasharray="8,8" stroke-linecap="round"/>
+
+                        <!-- Location markers -->
+                        <circle cx="80" cy="150" r="8" fill="#5a5a5a" stroke="#5a5a5a" stroke-width="2"/>
+                        <circle cx="100" cy="250" r="8" fill="#5a5a5a" stroke="#5a5a5a" stroke-width="2"/>
+                        <circle cx="140" cy="350" r="8" fill="#5a5a5a" stroke="#5a5a5a" stroke-width="2"/>
+
+                        <!-- X marks the spot -->
+                        <g transform="translate(200, 420)">
+                            <circle cx="0" cy="0" r="25" fill="#c4c4c4" opacity="0.3"/>
+                            <line x1="-15" y1="-15" x2="15" y2="15" stroke="#6b6b6b" stroke-width="4" stroke-linecap="round"/>
+                            <line x1="15" y1="-15" x2="-15" y2="15" stroke="#6b6b6b" stroke-width="4" stroke-linecap="round"/>
+                        </g>
+
+                        <!-- Mountains -->
+                        <g opacity="0.4">
+                            <polygon points="250,200 270,150 290,200" fill="#5a5a5a"/>
+                            <polygon points="280,200 300,160 320,200" fill="#7a7a7a"/>
+                            <polygon points="220,220 245,170 270,220" fill="#5a5a5a"/>
+                        </g>
+
+                        <!-- Trees -->
+                        <g opacity="0.4">
+                            <polygon points="100,450 110,420 120,450" fill="#6b6b6b"/>
+                            <rect x="108" y="450" width="4" height="15" fill="#5a5a5a"/>
+                            <polygon points="150,480 160,450 170,480" fill="#6b6b6b"/>
+                            <rect x="158" y="480" width="4" height="15" fill="#5a5a5a"/>
+                            <polygon points="70,500 80,470 90,500" fill="#6b6b6b"/>
+                            <rect x="78" y="500" width="4" height="15" fill="#5a5a5a"/>
+                        </g>
+
+                        <!-- Waves/Water -->
+                        <g opacity="0.3">
+                            <path d="M 40,300 Q 50,295 60,300 T 80,300" stroke="#7a7a7a" stroke-width="2" fill="none"/>
+                            <path d="M 40,310 Q 50,305 60,310 T 80,310" stroke="#7a7a7a" stroke-width="2" fill="none"/>
+                            <path d="M 280,520 Q 290,515 300,520 T 320,520" stroke="#7a7a7a" stroke-width="2" fill="none"/>
+                            <path d="M 280,530 Q 290,525 300,530 T 320,530" stroke="#7a7a7a" stroke-width="2" fill="none"/>
+                        </g>
+
+                        <!-- Decorative border -->
+                        <rect x="10" y="10" width="380" height="580" fill="none"
+                              stroke="#5a5a5a" stroke-width="3" stroke-dasharray="10,5"/>
+                    </svg>
+                </div>
+                <div class="journey-map-container">
+                    <div id="journey-map"></div>
+                    <svg class="map-overlay-lines" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                                <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#000" stroke-width="2" opacity="0.8"/>
+                            </pattern>
+                            <pattern id="scratches" width="200" height="200" patternUnits="userSpaceOnUse">
+                                <line x1="10" y1="20" x2="60" y2="25" stroke="#000" stroke-width="2" opacity="0.7"/>
+                                <line x1="100" y1="50" x2="180" y2="48" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="30" y1="120" x2="90" y2="115" stroke="#000" stroke-width="2" opacity="0.7"/>
+                                <line x1="140" y1="160" x2="195" y2="165" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="5" y1="180" x2="45" y2="175" stroke="#000" stroke-width="1.5" opacity="0.6"/>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)"/>
+                        <rect width="100%" height="100%" fill="url(#scratches)"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section-title">SKILLS</h2>
+
+            <div class="skills-grid-modern">
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <img src="assets/icons/python.svg" width="44" height="44" class="skill-icon-large" alt="Languages" loading="lazy"/>
+                        <h3 class="skill-box-title">Languages</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">
+                            <img src="assets/icons/c.svg" width="18" height="18" alt="C" loading="lazy"/>
+                            C
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/c.svg" width="18" height="18" alt="C" loading="lazy"/>
+                            Embedded C
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/python.svg" width="18" height="18" alt="Python" loading="lazy"/>
+                            Python
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/html5.svg" width="18" height="18" alt="HTML5" loading="lazy"/>
+                            HTML/CSS
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/javascript.svg" width="18" height="18" alt="JavaScript" loading="lazy"/>
+                            JavaScript
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <img src="assets/icons/arduino.svg" width="44" height="44" class="skill-icon-large" alt="Hardware & Controllers" loading="lazy"/>
+                        <h3 class="skill-box-title">Hardware & Controllers</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">
+                            <img src="assets/icons/arduino.svg" width="18" height="18" alt="Arduino" loading="lazy"/>
+                            Arduino (UNO, Nano, Nano BLE 33 Sense)
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/espressif.svg" width="18" height="18" alt="ESP32" loading="lazy"/>
+                            ESP32 (Wroom, C3, S3)
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/espressif.svg" width="18" height="18" alt="NodeMCU" loading="lazy"/>
+                            NodeMCU 8266
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/stmicroelectronics.svg" width="18" height="18" alt="STM32" loading="lazy"/>
+                            STM32 (C0, H7, F7, F1, F0)
+                        </span>
+                        <span class="tag">
+                            Renesas (RA, RX)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <img src="assets/icons/mqtt.svg" width="44" height="44" class="skill-icon-large" alt="Protocols & Interfaces" loading="lazy"/>
+                        <h3 class="skill-box-title">Protocols & Interfaces</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">SPI</span>
+                        <span class="tag">I2C</span>
+                        <span class="tag">I2S</span>
+                        <span class="tag">UART</span>
+                        <span class="tag">USB</span>
+                        <span class="tag">CAN (Basic)</span>
+                        <span class="tag">RS485</span>
+                        <span class="tag">Modbus</span>
+                        <span class="tag">RS232</span>
+                        <span class="tag">Ethernet</span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="skill-box-header">
+                        <img src="assets/icons/visualstudiocode.svg" width="44" height="44" class="skill-icon-large" alt="Developer Tools" loading="lazy"/>
+                        <h3 class="skill-box-title">Developer Tools</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">
+                            <img src="assets/icons/stmicroelectronics.svg" width="18" height="18" alt="STM32Cube IDE" loading="lazy"/>
+                            STM32Cube IDE
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/arduino.svg" width="18" height="18" alt="Arduino IDE" loading="lazy"/>
+                            Arduino IDE
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/espressif.svg" width="18" height="18" alt="ESP-IDF" loading="lazy"/>
+                            ESP-IDF
+                        </span>
+                        <span class="tag">
+                            E2 Studio
+                        </span>
+                        <span class="tag">
+                            AntiGravity
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/visualstudiocode.svg" width="18" height="18" alt="VS Code" loading="lazy"/>
+                            VS Code
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/altiumdesigner.svg" width="18" height="18" alt="Altium" loading="lazy"/>
+                            Altium
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/kicad.svg" width="18" height="18" alt="KiCad" loading="lazy"/>
+                            KiCad
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/autodesk.svg" width="18" height="18" alt="EAGLE" loading="lazy"/>
+                            EAGLE
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box highlight-box">
+                    <div class="skill-box-header">
+                        <img src="assets/icons/espressif.svg" width="44" height="44" class="skill-icon-large" alt="IoT & Wireless" loading="lazy"/>
+                        <h3 class="skill-box-title">IoT & Wireless</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Wi-Fi</span>
+                        <span class="tag">
+                            <img src="assets/icons/mqtt.svg" width="18" height="18" alt="MQTT" loading="lazy"/>
+                            MQTT
+                        </span>
+                        <span class="tag">
+                            <img src="assets/icons/bluetooth.svg" width="18" height="18" alt="BLE" loading="lazy"/>
+                            BLE
+                        </span>
+                        <span class="tag">LoRa</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">UDP</span>
+                        <span class="tag">Cellular (SIMCOM & Quectel)</span>
+                    </div>
+                </div>
+
+                <div class="skill-box highlight-box">
+                    <div class="skill-box-header">
+                        <h3 class="skill-box-title">Soft Skills</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Team Player</span>
+                        <span class="tag">Fast Learner</span>
+                        <span class="tag">Effective Communicator</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section education-languages-section">
+            <div class="education-languages-grid">
+                <div class="education-column">
+                    <h2 class="section-title">EDUCATION</h2>
+                    <div class="card education-card">
+                        <div class="education-header">
+                            <div>
+                                <h3 class="education-title">Bachelor of Electronics & Communication</h3>
+                                <p class="education-school">LJ University</p>
+                            </div>
+                            <span class="badge">2023 - 2026</span>
+                        </div>
+                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</p>
+                    </div>
+                    <div class="card education-card">
+                        <div class="education-header">
+                            <div>
+                                <h3 class="education-title">Higher Secondary</h3>
+                                <p class="education-school">Shree Durga Vidhyalaya</p>
+                            </div>
+                            <span class="badge">2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages-column">
+                    <h2 class="section-title">LANGUAGES</h2>
+                    <div class="card languages-card">
+                        <div class="language-item">
+                            <span class="language-name-inline">Gujarati</span>
+                            <div class="language-stars">
+                                <span class="star filled"></span>
+                                <span class="star filled"></span>
+                                <span class="star filled"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name-inline">Hindi</span>
+                            <div class="language-stars">
+                                <span class="star filled"></span>
+                                <span class="star filled"></span>
+                                <span class="star filled"></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name-inline">English</span>
+                            <div class="language-stars">
+                                <span class="star filled"></span>
+                                <span class="star filled"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-container-compact">
+                <p class="contact-intro">Let's build something great together</p>
+                <div class="contact-grid">
+                    <a href="https://linkedin.com/in/divy-mistry" target="_blank" class="contact-card">
+                        <img src="assets/icons/linkedin.svg" width="32" height="32" alt="LinkedIn" loading="lazy"/>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/LostFrequencies11" target="_blank" class="contact-card">
+                        <img src="assets/icons/github.svg" width="32" height="32" alt="GitHub" loading="lazy"/>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:divymistry11@gmail.com" class="contact-card">
+                        <img src="assets/icons/gmail.svg" width="32" height="32" alt="Email" loading="lazy"/>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-compact">
+                <div class="footer-main">
+                    <div class="footer-brand-compact">
+                        <strong>DIVY MISTRY</strong>
+                        <span>Embedded Systems Student</span>
+                    </div>
+                    <div class="footer-nav-compact">
+                        <a href="#hero">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="projects.html">Projects</a>
+                    </div>
+                    <div class="footer-social-compact">
+                        <a href="https://github.com/LostFrequencies11" target="_blank" title="GitHub">
+                            <img src="assets/icons/github.svg" width="20" height="20" alt="GitHub" loading="lazy"/>
+                        </a>
+                        <a href="https://linkedin.com/in/divy-mistry" target="_blank" title="LinkedIn">
+                            <img src="assets/icons/linkedin.svg" width="20" height="20" alt="LinkedIn" loading="lazy"/>
+                        </a>
+                        <a href="mailto:divymistry11@gmail.com" title="Email">
+                            <img src="assets/icons/gmail.svg" width="20" height="20" alt="Email" loading="lazy"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom-compact">
+                    <span>© 2025 Divy Mistry</span>
+                    <a href="terminal.html" class="footer-terminal-link-compact">
+                        <i class="fas fa-terminal"></i> Terminal
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+
+    <script>
+        // Always start at top of page on reload
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        // Loading Screen
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-overlay');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 1200); // Hide after 1.2 seconds
+        });
+
+        // Grey filter toggle (eye icon) - colourful is default
+        const themeEye = document.getElementById('theme-eye');
+        if (themeEye) {
+            themeEye.addEventListener('click', () => {
+                document.body.classList.toggle('mono');
+                const icon = themeEye.querySelector('i');
+                if (document.body.classList.contains('mono')) {
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        }
+
+        // Mobile hamburger menu
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (navToggle && mobileMenu) {
+            navToggle.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.toggle('open');
+                navToggle.classList.toggle('open', isOpen);
+                navToggle.setAttribute('aria-expanded', isOpen);
+            });
+            mobileMenu.querySelectorAll('.mobile-menu-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Falling SVG - Only terminal (top-right)
+        let terminalFallen = false;
+        const decoTerminal = document.querySelector('.deco-terminal');
+        const heroContent = document.querySelector('.hero-content');
+
+        function calculateFallDistance() {
+            const heroContentRect = heroContent.getBoundingClientRect();
+            const heroContentBottom = heroContentRect.bottom;
+            const terminalRect = decoTerminal.getBoundingClientRect();
+            const terminalFall = Math.max(0, heroContentBottom - terminalRect.bottom - 50);
+            decoTerminal.style.setProperty('--fall-distance', `${terminalFall}px`);
+        }
+
+        calculateFallDistance();
+        window.addEventListener('resize', calculateFallDistance);
+
+        window.addEventListener('scroll', () => {
+            if (!terminalFallen && window.scrollY > 5) {
+                decoTerminal.classList.add('falling');
+                terminalFallen = true;
+            }
+        });
+
+        // Paper Tear Gap Parallax Effect
+        const pageGap = document.querySelector('.page-gap');
+        const paperTearBottom = document.querySelector('.paper-tear-bottom');
+        const paperTearBottomBgGray = document.querySelector('.paper-tear-bottom svg path[fill="#d0d0d0"]');
+        const paperTearBottomBgWhite = document.querySelector('.paper-tear-bottom svg path[fill="#ffffff"]');
+        const tearTapeSticker = document.querySelector('.tear-tape-sticker');
+        const minGapHeight = -30;
+
+        function updateTapePosition() {
+            if (paperTearBottom && tearTapeSticker) {
+                const rect = paperTearBottom.getBoundingClientRect();
+                tearTapeSticker.style.setProperty('--tape-position', `${rect.top}px`);
+            }
+        }
+
+        function updateGapParallax() {
+            if (!pageGap || !paperTearBottom) return;
+
+            const isMobile = window.innerWidth <= 768;
+
+            // Skip animation on mobile
+            if (isMobile) return;
+
+            const scrollY = window.scrollY;
+            const initialGapHeight = 300;
+            const scrollStart = 100;
+            const scrollRange = 200;
+            const stickerDelay = 30;
+            const stickerStart = scrollStart + scrollRange + stickerDelay;
+            const stickerRange = 60;
+
+            updateTapePosition();
+
+            if (scrollY <= scrollStart) {
+                pageGap.style.setProperty('height', initialGapHeight + 'px', 'important');
+                paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            } else if (scrollY >= scrollStart && scrollY <= scrollStart + scrollRange) {
+                const progress = (scrollY - scrollStart) / scrollRange;
+                const currentHeight = initialGapHeight - (initialGapHeight - minGapHeight) * progress;
+
+                if (currentHeight >= 0) {
+                    pageGap.style.setProperty('height', currentHeight + 'px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', '0px', 'important');
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '1';
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                } else {
+                    // Negative margin starts - fade background
+                    pageGap.style.setProperty('height', '0px', 'important');
+                    paperTearBottom.style.setProperty('margin-top', currentHeight + 'px', 'important');
+
+                    // Fade based on negative margin progress
+                    const negativePart = Math.abs(minGapHeight);
+                    const negativeProgress = Math.abs(currentHeight) / negativePart;
+                    const opacity = 1 - negativeProgress;
+
+                    if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = opacity;
+                    if (tearTapeSticker) {
+                        tearTapeSticker.style.transform = 'translateY(-100px) translateZ(50px) rotateX(45deg)';
+                        tearTapeSticker.style.opacity = '0';
+                    }
+                }
+            } else if (scrollY > stickerStart && scrollY < stickerStart + stickerRange) {
+                // Sticker animation in progress
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+
+                if (tearTapeSticker) {
+                    const stickerProgress = (scrollY - stickerStart) / stickerRange;
+
+                    // Interpolate transform values based on progress
+                    const translateY = -40 + (40 * stickerProgress);
+                    const translateZ = 30 - (30 * stickerProgress);
+                    const rotateX = 35 - (35 * stickerProgress);
+                    const opacityVal = Math.min(1, Math.max(0, (stickerProgress - 0.35) * 1.54));
+
+                    tearTapeSticker.style.transform = `translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg)`;
+                    tearTapeSticker.style.opacity = opacityVal;
+                }
+            } else if (scrollY >= stickerStart + stickerRange) {
+                // Sticker fully stuck
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(0px) translateZ(0px) rotateX(0deg)';
+                    tearTapeSticker.style.opacity = '1';
+                }
+            } else {
+                // Between gap close and sticker start
+                pageGap.style.setProperty('height', '0px', 'important');
+                paperTearBottom.style.setProperty('margin-top', minGapHeight + 'px', 'important');
+                if (paperTearBottomBgGray) paperTearBottomBgGray.style.opacity = '0';
+                if (tearTapeSticker) {
+                    tearTapeSticker.style.transform = 'translateY(-40px) translateZ(30px) rotateX(35deg)';
+                    tearTapeSticker.style.opacity = '0';
+                }
+            }
+        }
+
+        window.addEventListener('scroll', updateGapParallax);
+        window.addEventListener('resize', updateGapParallax);
+
+        // Initialize all animations with current scroll position
+        requestAnimationFrame(() => {
+            updateGapParallax();
+        });
+
+        // Highlight Parallax Effect
+        const highlights = document.querySelectorAll('.highlight');
+        const highlightData = new Map();
+
+        highlights.forEach((highlight, index) => {
+            const direction = index % 2 === 0 ? 'left' : 'right';
+            highlight.setAttribute('data-direction', direction);
+            highlightData.set(highlight, {
+                hasStarted: false,
+                startScroll: 0,
+                duration: 100,
+                direction: direction
+            });
+        });
+
+        function updateHighlights() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            highlights.forEach(highlight => {
+                const rect = highlight.getBoundingClientRect();
+                const elementTop = rect.top + scrollY;
+                const data = highlightData.get(highlight);
+
+                // Start highlighting when element is near top of viewport
+                const triggerPoint = scrollY + windowHeight * 0.8;
+
+                if (!data.hasStarted && triggerPoint >= elementTop) {
+                    data.hasStarted = true;
+                    data.startScroll = scrollY;
+                }
+
+                if (data.hasStarted) {
+                    const progress = Math.min(1, Math.max(0, (scrollY - data.startScroll) / data.duration));
+                    highlight.style.setProperty('--highlight-progress', `${progress * 100}%`);
+                }
+
+                // Reset when scrolling back up past element
+                if (data.hasStarted && scrollY < data.startScroll - 50) {
+                    data.hasStarted = false;
+                    highlight.style.setProperty('--highlight-progress', '0%');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateHighlights);
+        requestAnimationFrame(() => {
+            updateHighlights();
+        });
+
+        // Language Stars Parallax Effect
+        const languageItems = document.querySelectorAll('.language-item');
+        const languageStarsData = new Map();
+
+        languageItems.forEach(item => {
+            const stars = item.querySelectorAll('.language-stars .star');
+            languageStarsData.set(item, {
+                hasStarted: false,
+                startScroll: 0,
+                stars: stars,
+                starDelay: 50
+            });
+        });
+
+        function updateLanguageStars() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            languageItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                const elementTop = rect.top + scrollY;
+                const data = languageStarsData.get(item);
+
+                const triggerPoint = scrollY + windowHeight * 0.8;
+
+                if (!data.hasStarted && triggerPoint >= elementTop) {
+                    data.hasStarted = true;
+                    data.startScroll = scrollY;
+                }
+
+                if (data.hasStarted) {
+                    const scrollProgress = scrollY - data.startScroll;
+
+                    data.stars.forEach((star, index) => {
+                        const starTrigger = index * data.starDelay;
+                        if (scrollProgress >= starTrigger) {
+                            star.classList.add('visible');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateLanguageStars);
+        requestAnimationFrame(() => {
+            updateLanguageStars();
+        });
+
+        // Journey Timeline Book Page Effect
+        const journeyTimeline = document.querySelector('.journey-timeline');
+        const journeyTimelineBack = document.querySelector('.journey-timeline-back');
+        const journeyTimelineData = {
+            hasStarted: false,
+            startScroll: 0,
+            pageRange: 200
+        };
+
+        function updateJourneyTimeline() {
+            if (!journeyTimeline || !journeyTimelineBack) return;
+
+            // Only run animation on desktop
+            if (window.innerWidth < 769) return;
+
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const rect = journeyTimeline.getBoundingClientRect();
+            const elementTop = rect.top + scrollY;
+
+            const triggerPoint = scrollY + windowHeight * 0.5;
+
+            if (!journeyTimelineData.hasStarted && triggerPoint >= elementTop) {
+                journeyTimelineData.hasStarted = true;
+                journeyTimelineData.startScroll = scrollY;
+            }
+
+            if (journeyTimelineData.hasStarted) {
+                const progress = Math.min(1, Math.max(0, (scrollY - journeyTimelineData.startScroll) / journeyTimelineData.pageRange));
+
+                // Book left page opening - timeline rotates from back to front
+                const rotateY = 180 - (180 * progress); // 180 -> 0
+
+                // Both rotate together
+                journeyTimeline.style.transform = `rotateY(${rotateY}deg)`;
+                journeyTimelineBack.style.transform = `rotateY(${rotateY}deg)`;
+
+                // Switch z-index at 90 degrees
+                if (rotateY > 95) {
+                    // Map is visible (when book is closed)
+                    journeyTimeline.style.zIndex = '1';
+                    journeyTimelineBack.style.zIndex = '100';
+                } else {
+                    // Timeline content is visible (when book is open)
+                    journeyTimeline.style.zIndex = '100';
+                    journeyTimelineBack.style.zIndex = '1';
+                }
+
+                // Enable scrolling when fully opened
+                if (progress >= 1) {
+                    journeyTimeline.style.overflowY = 'auto';
+                } else {
+                    journeyTimeline.style.overflowY = 'hidden';
+                }
+            } else {
+                // Reset to initial state
+                journeyTimeline.style.transform = 'rotateY(180deg)';
+                journeyTimelineBack.style.transform = 'rotateY(180deg)';
+                journeyTimeline.style.zIndex = '1';
+                journeyTimelineBack.style.zIndex = '100';
+                journeyTimeline.style.overflowY = 'hidden';
+            }
+        }
+
+        window.addEventListener('scroll', updateJourneyTimeline);
+        requestAnimationFrame(() => {
+            updateJourneyTimeline();
+        });
+
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href');
+                if (!targetId || !targetId.startsWith('#')) return;
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Smart Navbar Scroll
+        const navbar = document.querySelector('.navbar');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Smart hide/show navbar
+            if (!(mobileMenu && mobileMenu.classList.contains('open')) && currentScroll > lastScroll && currentScroll > 100) {
+                // Scrolling down & past threshold - hide navbar
+                navbar.classList.add('navbar-hidden');
+            } else if (currentScroll < lastScroll) {
+                // Scrolling up - show navbar
+                navbar.classList.remove('navbar-hidden');
+            }
+
+            // Active link highlighting
+            const sections = document.querySelectorAll('section[id]');
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (currentScroll >= sectionTop && currentScroll < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section, .timeline-item, .skill-box').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Matrix Typing Effect for Hero Greeting
+        const greetingElement = document.getElementById('hero-greeting');
+        const finalText = 'Hi there! :)';
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+
+        function matrixTypingEffect() {
+            let iterations = 0;
+            const interval = setInterval(() => {
+                greetingElement.textContent = finalText
+                    .split('')
+                    .map((char, index) => {
+                        if (index < iterations) {
+                            return finalText[index];
+                        }
+                        if (char === ' ') {
+                            return char;
+                        }
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    })
+                    .join('');
+
+                if (iterations >= finalText.length) {
+                    clearInterval(interval);
+                }
+
+                iterations += 1/3;
+            }, 50);
+        }
+
+        // Start the effect after a short delay
+        setTimeout(matrixTypingEffect, 500);
+
+        // Journey Map with Leaflet
+        const initialView = { center: [22.975, 72.55], zoom: 11 };
+
+        const map = L.map('journey-map', {
+            center: initialView.center,
+            zoom: initialView.zoom,
+            scrollWheelZoom: false,
+            zoomControl: true
+        });
+
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+            maxZoom: 19,
+            subdomains: 'abcd'
+        }).addTo(map);
+
+        // Add custom home button control
+        L.Control.Home = L.Control.extend({
+            onAdd: function(map) {
+                const container = L.DomUtil.create('div', 'leaflet-bar leaflet-control leaflet-control-home');
+                const link = L.DomUtil.create('a', '', container);
+                link.href = '#';
+                link.title = 'Reset map view';
+                link.innerHTML = '<i class="fas fa-home"></i>';
+
+                L.DomEvent.on(link, 'click', function(e) {
+                    e.preventDefault();
+                    map.setView(initialView.center, initialView.zoom);
+                });
+
+                return container;
+            }
+        });
+
+        new L.Control.Home({ position: 'topright' }).addTo(map);
+
+        // Group locations by place
+        const locations = [
+            {
+                coords: [22.9379, 72.5574],
+                country: 'SWASEMI',
+                companies: [
+                    {
+                        city: 'Pirana-Piplaj Road, Ahmedabad',
+                        company: 'SWASEMI PVT LTD',
+                        period: 'Nov 2025 - Present',
+                        role: 'Embedded Systems Intern'
+                    }
+                ]
+            },
+            {
+                coords: [22.9904, 72.4866],
+                country: 'LJ University',
+                companies: [
+                    {
+                        city: 'Ahmedabad',
+                        company: 'LJ University',
+                        period: '2023 - 2026',
+                        role: 'B.E. Electronics & Communication'
+                    }
+                ]
+            },
+            {
+                coords: [22.9975, 72.6063],
+                country: 'Shree Durga Vidhyalaya',
+                companies: [
+                    {
+                        city: 'Ahmedabad',
+                        company: 'Shree Durga Vidhyalaya',
+                        period: '2022',
+                        role: 'Higher Secondary'
+                    }
+                ]
+            }
+        ];
+
+        // Store markers by country
+        const markers = {};
+
+        // Add custom neo-brutalist markers
+        locations.forEach(location => {
+            const isCurrent = location.country === 'SWASEMI';
+            const markerIcon = L.divIcon({
+                className: isCurrent ? 'neo-marker neo-marker-current' : 'neo-marker',
+                html: `
+                    <div class="neo-marker-label ${isCurrent ? 'neo-marker-label-current' : ''}">${location.country}</div>
+                    <div class="neo-marker-pin ${isCurrent ? 'neo-marker-pin-current' : ''}"></div>
+                `,
+                iconSize: isCurrent ? [35, 35] : [30, 30],
+                iconAnchor: isCurrent ? [17.5, 50] : [15, 45],
+                popupAnchor: [0, isCurrent ? -50 : -45]
+            });
+
+            // Build popup content with all companies for this country
+            let popupContent = `<div class="map-popup">`;
+            popupContent += `<div class="map-popup-country">${location.country}</div>`;
+
+            location.companies.forEach((company, index) => {
+                if (index > 0) popupContent += `<div class="map-popup-divider"></div>`;
+                popupContent += `
+                    <div class="map-popup-company">
+                        <strong>${company.company}</strong>
+                        <span>${company.role}</span>
+                        <small>${company.city}</small>
+                        <small>${company.period}</small>
+                    </div>
+                `;
+            });
+
+            popupContent += `</div>`;
+
+            const marker = L.marker(location.coords, { icon: markerIcon }).addTo(map);
+            marker.bindPopup(popupContent);
+
+            // Store marker by country
+            markers[location.country] = marker;
+        });
+
+        // Add click handlers to timeline items
+        document.querySelectorAll('.timeline-item-flat').forEach(item => {
+            item.addEventListener('click', () => {
+                const country = item.getAttribute('data-country');
+                const marker = markers[country];
+                if (marker) {
+                    map.setView(marker.getLatLng(), 6, {
+                        animate: true,
+                        duration: 1
+                    });
+                    setTimeout(() => {
+                        marker.openPopup();
+                    }, 500);
+                }
+            });
+        });
+
+        // Progress Bar Functionality
+        const progressBarFill = document.querySelector('.progress-bar-fill');
+        const checkpoints = document.querySelectorAll('.checkpoint');
+
+        function updateProgressBar() {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight - windowHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / documentHeight) * 100;
+
+            progressBarFill.style.width = progress + '%';
+
+            // Update active checkpoint based on scroll position
+            const sections = ['hero', 'about', 'experience', 'skills', 'contact'];
+            let activeIndex = 0;
+
+            sections.forEach((sectionId, index) => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                        activeIndex = index;
+                    }
+                }
+            });
+
+            checkpoints.forEach((checkpoint, index) => {
+                if (index <= activeIndex) {
+                    checkpoint.classList.add('active');
+                } else {
+                    checkpoint.classList.remove('active');
+                }
+            });
+        }
+
+        // Checkpoint click handlers
+        checkpoints.forEach(checkpoint => {
+            checkpoint.addEventListener('click', () => {
+                const sectionId = checkpoint.getAttribute('data-section');
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateProgressBar);
+        window.addEventListener('resize', updateProgressBar);
+        updateProgressBar();
+
+        // Copy email to clipboard with toast
+        function showCopyToast(email) {
+            const toast = document.getElementById('copy-toast');
+            if (!toast) return;
+            toast.querySelector('.toast-email').textContent = email;
+            toast.classList.add('active');
+            clearTimeout(toast._timer);
+            toast._timer = setTimeout(() => toast.classList.remove('active'), 2200);
+        }
+
+        document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const email = link.getAttribute('href').replace('mailto:', '').split('?')[0];
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(email).then(() => showCopyToast(email));
+                } else {
+                    const ta = document.createElement('textarea');
+                    ta.value = email;
+                    document.body.appendChild(ta);
+                    ta.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(ta);
+                    showCopyToast(email);
+                }
+            });
+        });
+
+    </script>
+
+    <div class="toast" id="copy-toast">
+        <span class="toast-check">✓</span>
+        <span>Copied! <span class="toast-email"></span></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#f9c74f"/>
+
+  <!-- D Letter Box -->
+  <rect x="6" y="16" width="22" height="24" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+
+  <!-- M Letter Box -->
+  <rect x="36" y="16" width="22" height="24" fill="#f3722c" stroke="#1d3557" stroke-width="2"/>
+
+  <!-- D Letter -->
+  <text x="17" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1d3557">D</text>
+
+  <!-- M Letter -->
+  <text x="47" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1d3557">M</text>
+
+  <!-- Neo-brutalist shadows -->
+  <rect x="9" y="19" width="22" height="24" fill="none" stroke="#1d3557" stroke-width="2" opacity="0.3"/>
+  <rect x="39" y="19" width="22" height="24" fill="none" stroke="#1d3557" stroke-width="2" opacity="0.3"/>
+</svg>
